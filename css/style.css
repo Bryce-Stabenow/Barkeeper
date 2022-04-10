@@ -1,0 +1,193 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  transition-duration: 150ms;
+}
+.hidden{
+  display: none;
+}
+.selected{
+  background-color: rgb(140, 239, 236);
+  color: black;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  display: flex;
+  flex-flow: column;
+  font-family: 'Source Code Pro', monospace;
+  background-color: rgb(17, 17, 19);
+}
+header, footer {
+  padding: 0px 2%;
+}
+header, #logo{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: rgb(31, 31, 31);
+}
+header h1{
+  font-family: 'Zilla Slab Highlight', cursive;
+  font-size: 50px;
+  margin: 1% 0px;
+  align-self: center;
+  color: rgb(140, 239, 236);
+}
+header p {
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-right: 10px;
+}
+#cornerIcon{
+  margin: 5px 5px;
+  width: 64px;
+  height: 64px;
+}
+main{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+main h2{
+  color: white;
+  font-size: 3rem;
+  margin: 30px 0px 10px 0px;
+}
+#choiceButtons, #resultsCarousel{
+  background-color: rgb(44, 44, 44);
+  overflow: auto;
+  white-space: nowrap;
+  margin-bottom: 4%;
+  width: 90%;
+  scroll-snap-type: x mandatory;
+}
+#choiceButtons div {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 0px 50px 24px 50px;
+  scroll-snap-align: start;
+}
+#resultsCarousel div{
+  display: inline-block;
+}
+#choiceButtons h3{
+  font-size: 1.5rem;
+}
+#choiceButtons div:hover , .resultsDiv:hover{
+  background-color: rgb(140, 239, 236);
+  color: black;
+}
+#choiceButtons img, .resultsDiv img{
+  width: 250px;
+  height: auto;
+}
+.resultsDiv{
+  text-align: center;
+  color: white;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items:center;
+  padding: 15px 10px;
+  scroll-snap-align: start;
+}
+footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: rgb(31, 31, 31);
+}
+footer a, footer p {
+  color:rgb(255, 255, 255); 
+}
+button{
+  background-color: rgb(31, 31, 31);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 15px;
+  padding: 1%;
+  transform: scale(1);
+  transition-duration: 150ms;
+  padding: 1% 3%;
+}
+button:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 0px rgb(140, 239, 236);
+  transition-duration: 150ms;
+  animation-play-state: paused;
+}
+
+.grow{
+  animation: grow;
+  animation-iteration-count: infinite;
+  animation-duration: 700ms;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/******************************************
+/* RESPONSIVENESS
+/*******************************************/
+@media screen and (max-width: 650px) {
+  main h2{
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+  }
+  button{
+    font-size: 1.5rem;
+  }
+  #choiceButtons div{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #choiceButtons{
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  main h2{
+    font-size: 2rem;
+  }
+  footer *{
+    font-size: 0.7rem;
+  }
+  #choiceButtons img{
+    width: 200px;
+    height: auto;
+  }
+  button{
+    padding: 5% 10%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  main h2{
+    font-size: 1.75rem;
+  }
+  #choiceButtons, #resultsCarousel{
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+}

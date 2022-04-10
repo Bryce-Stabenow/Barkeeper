@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Serving drinks since 2022">
+    	<meta name="keywords" content="bar, drinks, cocktail, cocktail ideas, party, party drinks, party cocktails, cocktail drinks, party ideas, drink ideas">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Barkeep.er</title>
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;700;900&family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet"> 
+	</head>
+	<body>
+		<header>
+			<div id="logo">
+				<a href="index.html">
+					<img src="img/cocktail-icon.png" id="cornerIcon">
+				</a>
+				<h1>Barkeep.er</h1>
+			</div>
+		</header>
+
+		<main id="selectionScreen">
+			<h2>Choose Your Booze:</h2>
+			<section id='choiceButtons' class="scrollmenu">
+				<div class="scrollOption">
+					<h3>Gin</h3>
+					<img src="https://www.thecocktaildb.com/images/ingredients/gin.png">
+				</div>
+				<div class="scrollOption">
+					<h3>Vodka</h3>
+					<img src="https://www.thecocktaildb.com/images/ingredients/vodka.png">
+				</div>
+				<div class="scrollOption">
+					<h3>Bourbon</h3>
+					<img src="https://www.thecocktaildb.com/images/ingredients/bourbon.png">
+				</div>
+				<div class="scrollOption">
+					<h3>Tequila</h3>
+					<img src="https://www.thecocktaildb.com/images/ingredients/tequila.png">
+				</div>
+				<div class="scrollOption">
+					<h3>Light Rum</h3>
+					<img src="https://www.thecocktaildb.com/images/ingredients/light rum.png">
+				</div>
+				<div class="scrollOption">
+					<h3>Dark Rum</h3>
+					<img src="https://www.thecocktaildb.com/images/ingredients/dark rum.png">
+				</div>
+				<div class="scrollOption">
+					<h3>Scotch</h3>
+					<img src="https://www.thecocktaildb.com/images/ingredients/scotch.png">
+				</div>
+				<div class="scrollOption">
+					<h3>Amaretto</h3>
+					<img src="https://www.thecocktaildb.com/images/ingredients/amaretto.png">
+				</div>
+				<div class="scrollOption">
+					<h3>Brandy</h3>
+					<img src="https://www.thecocktaildb.com/images/ingredients/brandy.png">
+				</div>
+				<div class="scrollOption">
+					<h3>Champagne</h3>
+					<img src="https://www.thecocktaildb.com/images/ingredients/champagne.png">
+				</div>
+			</section>
+			<button type="button" name="button" id="search">Get Cocktails</button>
+		</main>
+		<main id="drinkResultsScreen" class="hidden">
+			<h2 id="resultsH2"></h2>
+			<section id="resultsCarousel">
+				<!-- results injected by js -->
+			</section>
+			<button type="button" name="home" id="home">Back to Ingredients</button>
+		</main>
+
+		<footer>
+			<p>...a cocktail finder by <a href="https://twitter.com/BryceStabenow" target="_blank">B.S.</a></p>
+			<p>
+			<a target="_blank" href="https://icons8.com/icon/D09Gp5kyXAOf/shaker">Shaker</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+			</p>
+		</footer>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
