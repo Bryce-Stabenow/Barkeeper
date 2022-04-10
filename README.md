@@ -21,7 +21,7 @@ Distributed under the MIT License.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/BryceStabenow) - brycestabenow617@gmail.com
+Bryce Stabenow - [@BryceStabenow](https://twitter.com/BryceStabenow) - brycestabenow617@gmail.com
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
